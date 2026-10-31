@@ -1,5 +1,5 @@
-/* Стиль «Продающий»: лендинг под заявки. Главная деталь – калькулятор или онлайн-запись на первом экране
-   и живое «сообщение-превью», которое уходит владельцу в мессенджер. Цвета и шрифты – из палитры ниши. */
+/* Стиль «Продающий»: лендинг под заявки. Главная деталь - калькулятор или онлайн-запись на первом экране
+   и живое «сообщение-превью», которое уходит владельцу в мессенджер. Цвета и шрифты - из палитры ниши. */
 *, *::before, *::after { box-sizing: border-box; }
 :root {
   --hair: color-mix(in srgb, var(--c-ink) 14%, transparent);
@@ -37,7 +37,7 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 
 main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 
-/* первый экран: текст слева, виджет справа, фото ниши – приглушённым фоном */
+/* первый экран: текст слева, виджет справа, фото ниши - приглушённым фоном */
 .s-hero { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 460px); gap: clamp(28px, 5vw, 64px); align-items: start;
   padding: clamp(32px, 6vw, 72px) 0 clamp(40px, 6vw, 72px); isolation: isolate; }
 .s-hero__bg { position: absolute; z-index: -1; margin: 0; top: 0; left: calc(50% - 50vw); width: 100vw; height: min(78%, 620px); overflow: hidden; }
@@ -152,7 +152,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 .s-faq summary { cursor: pointer; list-style: none; padding: 18px 52px 18px 20px; font-weight: 700; position: relative; }
 .s-faq summary::-webkit-details-marker { display: none; }
 .s-faq summary::after { content: "+"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font: 700 1.4rem/1 var(--f-display); color: var(--c-accent); }
-.s-faq details[open] summary::after { content: "–"; }
+.s-faq details[open] summary::after { content: "-"; }
 .s-faq details p { padding: 0 20px 18px; color: var(--c-ink-soft); }
 
 .s-contacts { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; background: var(--tint); border-radius: var(--r); padding: clamp(22px, 4vw, 40px); align-items: center; }
